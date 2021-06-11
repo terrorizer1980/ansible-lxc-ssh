@@ -634,4 +634,4 @@ jobs:
         run: cat $GITHUB_WORKSPACE/tests/inventory.yml
 
       - name: Run test
-        run: ANSIBLE_CONFIG=$GITHUB_WORKSPACE/tests/ cd tests && ansible-playbook -i $GITHUB_WORKSPACE/tests/inventory.yml $GITHUB_WORKSPACE/tests/test-lxc-root_ssh.yml -vv
+        run: ANSIBLE_CONFIG=$GITHUB_WORKSPACE/tests/ cd tests && ansible-playbook -i $GITHUB_WORKSPACE/tests/inventory.yml $GITHUB_WORKSPACE/tests/test-lxc-root_ssh.yml -vvvv
