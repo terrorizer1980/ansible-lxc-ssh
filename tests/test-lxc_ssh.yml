@@ -85,7 +85,7 @@
       include_tasks:
         file: "test-command.yml"
       vars:
-        expect_user: "ubuntu"
+        expect_user: "root"
 
     - name: Test template
       include_tasks:
