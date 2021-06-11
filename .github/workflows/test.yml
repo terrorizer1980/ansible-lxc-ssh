@@ -624,8 +624,8 @@ jobs:
               testhost:
                 ansible_host: ${{ steps.test_container_ipv4.outputs.IPv4 }}
                 ansible_port: 22
-                ansible_user: 'root'
-                ansible_ssh_private_key_file : /root/keys/id_ed25519
+                ansible_user: 'ubuntu'
+                ansible_ssh_private_key_file : $HOME/keys/id_ed25519
                 lxc_container: "nested-container"
                 ansible_connection: lxc_ssh
           EOF
